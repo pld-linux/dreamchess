@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Dreamchess
 Comment=3D X-Window chess game
-Comment[pl]=Trówymiarowa gra szachowa dla X-Window
+Comment[pl]=Trójwymiarowa gra szachowa dla X-Window
 Exec=dreamchess
 Icon=dreamchess.png
 Terminal=false
