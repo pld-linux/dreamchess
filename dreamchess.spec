@@ -11,6 +11,8 @@ Source1:	%{name}.desktop
 URL:		http://www.dreamchess.org/
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_image-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	libjpeg-devel
 BuildRequires:	libpng-devel
 BuildRequires:	zlib-devel
