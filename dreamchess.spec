@@ -1,5 +1,5 @@
 Summary:	3D chess game for X-Window
-Summary(pl):	Trójwymiarowe szachy dla X-Window
+Summary(pl.UTF-8):   TrÃ³jwymiarowe szachy dla X-Window
 Name:		dreamchess
 Version:	0.1.0
 Release:	1
@@ -23,9 +23,9 @@ DreamChess is an open source chess game. It features 3D OpenGL
 graphics and provides various chess board sets, ranging from classic
 wooden to flat figurines.
 
-%description -l pl
-DreamChess jest darmow± gr± posiadaj±c± otwarte ¼ród³a. Gra posiada
-grafikê 3D OpenGL i dostarcza zró¿nicowane zestawy szachowe, pocz±wszy
+%description -l pl.UTF-8
+DreamChess jest darmowÄ… grÄ… posiadajÄ…cÄ… otwarte ÅºrÃ³dÅ‚a. Gra posiada
+grafikÄ™ 3D OpenGL i dostarcza zrÃ³Å¼nicowane zestawy szachowe, poczÄ…wszy
 od klasycznej drewnianej planszy i standardowych figur.
 
 %prep
