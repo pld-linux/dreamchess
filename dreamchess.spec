@@ -1,5 +1,5 @@
 Summary:	3D chess game for X-Window
-Summary(pl.UTF-8):   Trójwymiarowe szachy dla X-Window
+Summary(pl.UTF-8):	Trójwymiarowe szachy dla X-Window
 Name:		dreamchess
 Version:	0.1.0
 Release:	1
