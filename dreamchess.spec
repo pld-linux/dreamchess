@@ -2,7 +2,7 @@ Summary:	3D chess game for X-Window
 Summary(pl.UTF-8):	Trójwymiarowe szachy dla X-Window
 Name:		dreamchess
 Version:	0.2.0
-Release:	1
+Release:	2
 License:	GPL v3+
 Group:		X11/Applications/Games
 Source0:	http://download.berlios.de/dreamchess/%{name}-%{version}.tar.gz
