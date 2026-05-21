@@ -1,0 +1,10 @@
+--- dreamchess-0.2.0/configure.ac.orig
++++ dreamchess-0.2.0/configure.ac
+@@ -295,6 +295,7 @@ AC_CHECK_HEADER([mxml.h], [], [AC_MSG_ER
+ AC_CHECK_LIB(mxml, mxmlLoadFile, [], [AC_MSG_ERROR([Cannot find Mini-XML library.])])
+
+ AM_CONDITIONAL(BEOS_RC, test x"$beos_rc" = x"yes")
++DREAMCHESS_LIBS="${DREAMCHESS_LIBS} ${M_LIBS}"
+ AC_SUBST(DREAMCHESS_LIBS)
+ AC_SUBST(DREAMER_LIBS)
+ AC_SUBST(MINIZIP_LIB)

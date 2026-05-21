@@ -1,0 +1,11 @@
+--- dreamchess-0.2.0/src/dreamer/repetition.h.orig
++++ dreamchess-0.2.0/src/dreamer/repetition.h
+@@ -30,7 +30,7 @@ int is_repetition(board_t *board, int pl
+
+ int is_draw(board_t *board);
+
+-void repetition_init();
++void repetition_init(board_t *board);
+
+ void repetition_exit();
+

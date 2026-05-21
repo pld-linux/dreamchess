@@ -2,13 +2,16 @@ Summary:	3D chess game for X-Window
 Summary(pl.UTF-8):	Trójwymiarowe szachy dla X-Window
 Name:		dreamchess
 Version:	0.2.0
-Release:	2
+Release:	3
 License:	GPL v3+
 Group:		X11/Applications/Games
-Source0:	http://download.berlios.de/dreamchess/%{name}-%{version}.tar.gz
+Source0:	https://github.com/dreamchess/dreamchess/releases/download/%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	0e837e14819c1e7d0232c6beb4d5c185
 Source1:	%{name}.desktop
-URL:		http://www.dreamchess.org/
+Patch0:		%{name}-c99-prototype.patch
+Patch1:		%{name}-format-security.patch
+Patch2:		%{name}-link-libm.patch
+URL:		https://www.dreamchess.org/
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_image-devel
 BuildRequires:	SDL_mixer-devel
@@ -34,12 +37,16 @@ od klasycznej drewnianej planszy i standardowych figur.
 
 %prep
 %setup -q
+%patch -P0 -p1
+%patch -P1 -p1
+%patch -P2 -p1
 
 %build
 %{__aclocal}
 %{__autoconf}
 %{__autoheader}
 %{__automake}
+CPPFLAGS="%{rpmcppflags}" \
 %configure
 %{__make}
 

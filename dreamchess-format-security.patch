@@ -1,0 +1,11 @@
+--- dreamchess-0.2.0/src/ui.c.orig
++++ dreamchess-0.2.0/src/ui.c
+@@ -60,7 +60,7 @@ list_ui_drivers()
+     {
+         if (i > 0)
+             printf(", ");
+-        printf(ui_driver[i]->name);
++        printf("%s", ui_driver[i]->name);
+         i++;
+     }
+     printf("\n");
